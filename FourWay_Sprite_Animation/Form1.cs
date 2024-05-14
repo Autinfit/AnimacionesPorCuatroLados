@@ -27,7 +27,27 @@ namespace FourWay_Sprite_Animation
         {
             // MÉTODO CUANDO EL JUGADOR PRESIONA UNA TECLA...
 
-            // EN INSTANTES...
+            // VAMOS A CREAR UN ALGORITMO SENCILLO MEDIANTE LAS CONDICIONES "if" AL PRESIONAR UNA TECLA...
+
+            if (e.KeyCode == Keys.Left) // SI SE PRESIONA LA TECLA IZQUIERDA DEL TECLADO...
+            {
+                izquierda = true; // EL JUGADOR VA HACIA LA IZQUIERDA.
+            }
+
+            if (e.KeyCode == Keys.Right) // SI SE PRESIONA LA TECLA DERECHA DEL TECLADO...
+            {
+                derecha = true; // EL JUGADOR VA HACIA LA DERECHA.
+            }
+
+            if (e.KeyCode == Keys.Up) // SI SE PRESIONA LA TECLA DE ARRIBA DEL TECLADO...
+            {
+                arriba = true; // EL JUGADOR VA HACIA ARRIBA.
+            }
+
+            if (e.KeyCode == Keys.Down) // SI SE PRESIONA LA TECLA DE ABAJO DEL TECLADO...
+            {
+                abajo = true; // EL JUGADOR VA HACIA ABAJO.
+            }
         }
 
         private void SoltarCualquierTecla(object sender, KeyEventArgs e)
