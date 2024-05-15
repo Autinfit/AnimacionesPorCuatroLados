@@ -54,7 +54,27 @@ namespace FourWay_Sprite_Animation
         {
             // MÉTODO CUANDO EL JUGADOR SUELTA UNA TECLA...
 
-            // EN INSTANTES...
+            // HAREMOS EL MISMO PROCEDIMIENTO PERO LO CONTRARIO QUE AL PRESIONAR UNA TECLA (MISMO ALGORITMO DE CÓDIGO)...
+
+            if (e.KeyCode == Keys.Left) // SI SE SUELTA LA TECLA IZQUIERDA DEL TECLADO...
+            {
+                izquierda = false; // EL JUGADOR YA NO VA HACIA LA IZQUIERDA.
+            }
+
+            if (e.KeyCode == Keys.Right) // SI SE SUELTA LA TECLA DERECHA DEL TECLADO...
+            {
+                derecha = false; // EL JUGADOR YA NO VA HACIA LA DERECHA.
+            }
+
+            if (e.KeyCode == Keys.Up) // SI SE SUELTA LA TECLA DE ARRIBA DEL TECLADO...
+            {
+                arriba = false; // EL JUGADOR YA NO VA HACIA ARRIBA.
+            }
+
+            if (e.KeyCode == Keys.Down) // SI SE SUELTA LA TECLA DE ABAJO DEL TECLADO...
+            {
+                abajo = false; // EL JUGADOR YA NO VA HACIA ABAJO.
+            }
         }
 
         private void EdicionFormulario(object sender, PaintEventArgs e)
