@@ -12,7 +12,7 @@ namespace FourWay_Sprite_Animation
         int reducirFrecuenciaPatrones = 0; // REDUCCIÓN DE FRECUENCIA DE PATRONES DEL PROYECTO.
         bool izquierda, derecha, arriba, abajo; // DECISIÓN DEL USUARIO HACIA DONDE MUEVE EL PERSONAJE.
         int jugadorEnX; // POSICIÓN DEL JUGADOR EN X DE MANERA HORIZONTAL.
-        int jugadorY; // POSICIÓN DEL JUGADOR EN Y DE MANERA VERTICAL.
+        int jugadorEnY; // POSICIÓN DEL JUGADOR EN Y DE MANERA VERTICAL.
         int alturaJugador = 100; // ALTURA DEL JUGADOR EN EL JUEGO DE MANERA DINÁMICA AQUÍ.
         int anchoJugador = 100; // ANCHO DEL JUGADOR EN EL JUEGO DE MANERA DINÁMICA AQUÍ.
         int velocidadJugador = 8; // LA VELOCIDAD DEL JUGADOR SERÁ DE 8 KM.
@@ -81,7 +81,10 @@ namespace FourWay_Sprite_Animation
         {
             // MÉTODO PARA EDITAR EL FORMULARIO MEDIANTE FUNCIONES GRÁFICAS...
 
-            // EN INSTANTES...
+            // ES SÚPER CORTO EL PROCEDIMIENTO (2 LÍNEAS DE CÓDIGO EN ESTE MÉTODO)...
+
+            Graphics Canvas = e.Graphics; // IMPORTAREMOS GRÁFICAS DEL LIENZO PARA EDICIONES POSTERIORES DE LA INTERFAZ DEL FORMULARIO.
+            Canvas.DrawImage(jugador, jugadorEnX, jugadorEnY, anchoJugador, alturaJugador); // INCORPORAREMOS AL PERSONAJE EN LA INTERFAZ CON SUS RESPECTIVAS CARACTERÍSTICAS.
         }
 
         private void TiempoEjecucion(object sender, EventArgs e)
