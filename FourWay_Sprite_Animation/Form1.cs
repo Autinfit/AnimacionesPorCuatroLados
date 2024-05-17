@@ -102,7 +102,16 @@ namespace FourWay_Sprite_Animation
         {
             // MÉTODO SECUENCIAL PARA CONFIGURACIONES POSTERIORES...
 
-            // EN INSTANTES...
+            // VAMOS A IMPORTAR IMÁGENES DE MANERA DINÁMICA AQUÍ...
+
+            this.BackgroundImage = Image.FromFile("bg.jpg");
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.DoubleBuffered = true;
+
+            // SE CARGAN LOS RECURSOS GRÁFICOS DEL JUGADOR MEDIANTE UNA LISTA DE RECURSOS IMPORTADOS AQUÍ...
+
+            movimientosPersonaje = Directory.GetFiles("jugador", "*.png").ToList();
+            jugador = Image.FromFile(movimientosPersonaje[0]);
         }
 
         private void AnimarJugador(int inicial, int final)
