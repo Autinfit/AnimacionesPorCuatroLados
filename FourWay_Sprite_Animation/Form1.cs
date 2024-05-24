@@ -91,7 +91,39 @@ namespace FourWay_Sprite_Animation
         {
             // MÉTODO PARA INICIALIZAR LA EJECUCIÓN DEL PROYECTO EN GENERAL...
 
-            // EN INSTANTES...
+            // MEDIANTE MOVIMIENTOS DEL PERSONAJE, VAMOS A CONFIGURAR SUS DIRECCIONES RESPECTIVAS MEDIANTE UNA CONDICIÓN ("if")...
+
+            if (izquierda && jugadorEnX > 0) // SI EL JUGADOR VA HACIA LA IZQUIERDA...
+            {
+                jugadorEnX -= velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO CONTRARIO.
+                AnimarJugador(4, 7); // LAS ANIMACIONES VAN A SER DEFINIDAS MEDIANTE SUS CANTIDADES RESPECTIVAS PARA CADA CLON DEL JUGADOR.
+            }
+
+            else if (derecha && jugadorEnX + anchoJugador < this.ClientSize.Width) // SI EL JUGADOR VA HACIA LA DERECHA...
+            {
+                jugadorEnX += velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO DIRECTO.
+                AnimarJugador(8, 11); // LAS ANIMACIONES VAN A SER DEFINIDAS MEDIANTE SUS CANTIDADES RESPECTIVAS PARA CADA CLON DEL JUGADOR.
+            }
+
+            else if (arriba && jugadorEnY > 0) // SI EL JUGADOR VA HACIA ARRIBA...
+            {
+                jugadorEnY -= velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO CONTRARIO.
+                AnimarJugador(12, 15); // LAS ANIMACIONES VAN A SER DEFINIDAS MEDIANTE SUS CANTIDADES RESPECTIVAS PARA CADA CLON DEL JUGADOR.
+            }
+
+            else if (abajo && jugadorEnY + alturaJugador < this.ClientSize.Height) // SI EL JUGADOR VA HACIA ABAJO...
+            {
+                jugadorEnX += velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO DIRECTO.
+                AnimarJugador(0, 3); // LAS ANIMACIONES VAN A SER DEFINIDAS MEDIANTE SUS CANTIDADES RESPECTIVAS PARA CADA CLON DEL JUGADOR.
+            }
+
+            else
+            {
+                AnimarJugador(0, 0);
+            }
+
+            this.Invalidate();
+            cantidadMovimientos.Text = "Movimientos: " + pasos;
         }
 
         // HASTA AHORA DINÁMICAMENTE SE AGREGARON ESTOS EVENTOS...
@@ -110,7 +142,7 @@ namespace FourWay_Sprite_Animation
 
             // SE CARGAN LOS RECURSOS GRÁFICOS DEL JUGADOR MEDIANTE UNA LISTA DE RECURSOS IMPORTADOS AQUÍ...
 
-            movimientosPersonaje = Directory.GetFiles("jugador", "*.png").ToList();
+            movimientosPersonaje = Directory.GetFiles("player", "*.png").ToList();
             jugador = Image.FromFile(movimientosPersonaje[0]);
         }
 
