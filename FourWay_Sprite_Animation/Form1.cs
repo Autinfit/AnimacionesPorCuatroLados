@@ -150,7 +150,22 @@ namespace FourWay_Sprite_Animation
         {
             // MÉTODO PARA ANIMAR AL JUGADOR SEGÚN LOS TIEMPOS DE EJECUCIÓN DEL PROGRAMA...
 
-            // EN INSTANTES...
+            // FINALMENTE, CREAREMOS UN ALGORITMO MUCHO MÁS ESTRUCTURADO PARA REALIZAR ANIMACIONES AL JUGADOR...
+
+            reducirFrecuenciaPatrones -= 1; // REDUCE A 1 LA CANTIDAD DE PATRONES DEL PERSONAJE.
+
+            if (reducirFrecuenciaPatrones == 4) // SI LA CANTIDAD DE PATRONES ES IGUAL A 4...
+            {
+                pasos++; // CONTABILIZA LA CANTIDAD DE PASOS.
+                reducirFrecuenciaPatrones = 0; // LO DEJA A 0 POR DEFECTO LOS PATRONES DEL PERSONAJE EN ESA POSICIÓN.
+            }
+
+            if (pasos > final || pasos < inicial) // SI LA CANTIDAD DE PASOS SE FIJAN MEDIANTE UN INTERVALO DE INICIO Y/O TÉRMINO...
+            {
+                pasos = inicial; //  INICIA LOS MOVIMIENTOS DEL PERSONAJE MEDIANTE CONTEO DE PASOS.
+            }
+
+            jugador = Image.FromFile(movimientosPersonaje[pasos]);
         }
     }
 }
