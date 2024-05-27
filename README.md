@@ -9,3 +9,11 @@
 - **_Recrearemos solo el movimiento y lo demostraremos utilizando formularios de Windows y Visual Studio._**
 
 **_Empecemos!!!!!_**
+
+Crea una animación de movimiento de 4 direcciones usando sprites y programación C#
+Cargue los movimientos del jugador desde una carpeta y guárdelos en una lista
+use la lista para mostrar imágenes específicas cuando se activa un movimiento específico en el programa
+Utilice las teclas de flecha para mover el objeto del jugador.
+Utilice eventos de pintura y temporizador para mover y animar el objeto del jugador.
+Cree funciones personalizadas para limitar los movimientos y mostrar solo las imágenes correspondientes como animaciones.
+Reduzca la velocidad de la animación para que parezca más adecuada para la aplicación.
