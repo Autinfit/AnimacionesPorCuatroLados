@@ -17,5 +17,5 @@
 - Use la lista para mostrar imágenes específicas cuando se activa un movimiento específico en el programa
 - Utilice las teclas de flecha para mover el objeto del jugador.
 - Utilice eventos de pintura y temporizador para mover y animar el objeto del jugador.
-Cree funciones personalizadas para limitar los movimientos y mostrar solo las imágenes correspondientes como animaciones.
+- Cree funciones personalizadas para limitar los movimientos y mostrar solo las imágenes correspondientes como animaciones.
 Reduzca la velocidad de la animación para que parezca más adecuada para la aplicación.
