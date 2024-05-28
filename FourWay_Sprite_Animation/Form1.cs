@@ -15,7 +15,7 @@ namespace FourWay_Sprite_Animation
         int jugadorEnY; // POSICIÓN DEL JUGADOR EN Y DE MANERA VERTICAL.
         int alturaJugador = 100; // ALTURA DEL JUGADOR EN EL JUEGO DE MANERA DINÁMICA AQUÍ.
         int anchoJugador = 100; // ANCHO DEL JUGADOR EN EL JUEGO DE MANERA DINÁMICA AQUÍ.
-        int velocidadJugador = 8; // LA VELOCIDAD DEL JUGADOR SERÁ DE 8 KM.
+        int velocidadJugador = 10; // LA VELOCIDAD DEL JUGADOR SERÁ DE 8 KM.
 
         public Form1()
         {
@@ -113,7 +113,7 @@ namespace FourWay_Sprite_Animation
 
             else if (abajo && jugadorEnY + alturaJugador < this.ClientSize.Height) // SI EL JUGADOR VA HACIA ABAJO...
             {
-                jugadorEnX += velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO DIRECTO.
+                jugadorEnY += velocidadJugador; // LA VELOCIDAD SE DIRIGE HACIA EL LADO DIRECTO.
                 AnimarJugador(0, 3); // LAS ANIMACIONES VAN A SER DEFINIDAS MEDIANTE SUS CANTIDADES RESPECTIVAS PARA CADA CLON DEL JUGADOR.
             }
 
@@ -152,7 +152,7 @@ namespace FourWay_Sprite_Animation
 
             // FINALMENTE, CREAREMOS UN ALGORITMO MUCHO MÁS ESTRUCTURADO PARA REALIZAR ANIMACIONES AL JUGADOR...
 
-            reducirFrecuenciaPatrones -= 1; // REDUCE A 1 LA CANTIDAD DE PATRONES DEL PERSONAJE.
+            reducirFrecuenciaPatrones += 1; // REDUCE A 1 LA CANTIDAD DE PATRONES DEL PERSONAJE.
 
             if (reducirFrecuenciaPatrones == 4) // SI LA CANTIDAD DE PATRONES ES IGUAL A 4...
             {
