@@ -14,7 +14,7 @@
 
 - **_Crear una animación de movimientos de 4 direcciones usando sprites y programación C#._**
 - **_Cargue los movimientos del jugador desde una carpeta y guárdelos en una lista._**
-- _Use la lista para mostrar imágenes específicas cuando se activa un movimiento específico en el programa._
+- **_Use la lista para mostrar imágenes específicas cuando se activa un movimiento específico en el programa._**
 - Utilice las teclas de flecha para mover el objeto del jugador.
 - Utilice eventos de pintura y temporizador para mover y animar el objeto del jugador.
 - Cree funciones personalizadas para limitar los movimientos y mostrar solo las imágenes correspondientes como animaciones.
