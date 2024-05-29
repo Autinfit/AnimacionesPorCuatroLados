@@ -12,7 +12,7 @@
 
 ### Objetivos de esta lección:
 
-- Crear una animación de movimientos de 4 direcciones usando sprites y programación C#.
+- _Crear una animación de movimientos de 4 direcciones usando sprites y programación C#._
 - Cargue los movimientos del jugador desde una carpeta y guárdelos en una lista.
 - Use la lista para mostrar imágenes específicas cuando se activa un movimiento específico en el programa.
 - Utilice las teclas de flecha para mover el objeto del jugador.
