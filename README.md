@@ -18,4 +18,4 @@
 - **_Utilizar las teclas de flecha para mover el objeto del jugador._**
 - **_Utilizar eventos de pintura y temporizador para mover y animar el objeto del jugador._**
 - **_Crear funciones personalizadas para limitar los movimientos y mostrar solo las imágenes correspondientes como animaciones._**
-- **_Reduzca la velocidad de la animación para que parezca más adecuada para la aplicación._**
+- **_Reducir la velocidad de la animación para que parezca más adecuada para la aplicación._**
