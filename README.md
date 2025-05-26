@@ -8,7 +8,7 @@
 - **_Este tipo de animación es muy popular en los juegos de Zelda y en algunos juegos isométricos de arriba hacia abajo._**
 - **_Recrearemos solo el movimiento y lo demostraremos utilizando formularios de Windows y Visual Studio._**
 
-**_Empecemos!!!!!_**
+### **_Empecemos!!!!!_**
 
 ## Objetivos de esta lección:
 
