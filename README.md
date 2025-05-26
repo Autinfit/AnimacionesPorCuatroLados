@@ -1,4 +1,4 @@
-# _AnimacionesPorCuatroLados_
+# **_AnimacionesPorCuatroLados_**
 
 - **_Hagamos algo divertido._**
 - **_¿Qué tal una animación simple en la que puedes animar a un solo personaje caminando por la pantalla en las 4 direcciones y lo haremos solo usando C# y Visual Studio?_**
