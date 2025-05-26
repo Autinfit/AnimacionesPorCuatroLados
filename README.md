@@ -10,7 +10,7 @@
 
 ### **_Empecemos!!!!!_**
 
-## _Objetivos de esta lección:_
+## **_Objetivos de esta lección:_**
 
 - **_Crear una animación de movimientos de 4 direcciones usando sprites y programación C#._**
 - **_Cargar los movimientos del jugador desde una carpeta y guardarlos en una lista._**
