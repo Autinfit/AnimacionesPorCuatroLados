@@ -1,7 +1,7 @@
 # **_AnimacionesPorCuatroLados_**
 
 - **_Hagamos algo divertido._**
-- **_¿Qué tal una animación simple en la que puedes animar a un sólo personaje caminando por la pantalla en las 4 direcciones y lo haremos solamente usando C# y Visual Studio?_**
+- **_¿Qué tal una animación simple en la que puedes animar a un sólo personaje caminando por la pantalla en las 4 direcciones y lo haremos solamente utilizando C# y Visual Studio?_**
 - **_Bueno, puede parecer un poco confuso al principio, pero hemos descubierto cómo hacerlo con estilo._**
 - **_En este tutorial encontrarás las respuestas a todas esas preguntas._**
 - **_Analizaremos cómo hacer una animación simple solo usando C# e importaremos imágenes y las cargaremos dentro del programa y las animaremos usando una función personalizada._**
